@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<persistence xmlns="http://xmlns.jcp.org/xml/ns/persistence"
+             xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+             xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence http://xmlns.jcp.org/xml/ns/persistence/persistence_2_2.xsd"
+             version="2.2">
+  <persistence-unit name="banque" transaction-type="RESOURCE_LOCAL">
+    <provider>org.hibernate.jpa.HibernatePersistenceProvider</provider>
+    <class>fr.digi.Banque</class>
+    <class>fr.digi.Client</class>
+    <class>fr.digi.Compte</class>
+    <class>fr.digi.Operation</class>
+    <class>fr.digi.AssuranceVIe</class>
+    <class>fr.digi.Virement</class>
+    <class>fr.digi.LivretA</class>
+    <class>fr.digi.Adresse</class>
+    <properties>
+      <property name="javax.persistence.jdbc.url" value="jdbc:mysql://b518ghabzrevoro6ttmc-mysql.services.clever-cloud.com:3306/b518ghabzrevoro6ttmc" />
+      <property name="javax.persistence.jdbc.user" value="uspurecagpug72z3" />
+      <property name="javax.persistence.jdbc.password" value="fiKURjPb5CRqUU78nY3c" />
+      <property name="javax.persistence.jdbc.driver" value="com.mysql.cj.jdbc.Driver" />
+      <property name="hibernate.show_sql" value="true" />
+      <property name="hibernate.format_sql" value="true" />
+      <property name="javax.persistence.schema-generation.database.action" value="drop-and-create"/>
+      <property name="hibernate.hbm2ddl.auto" value="update"/>
+      <property name="hibernate.archive.autodetection" value="" />
+    </properties>
+  </persistence-unit>
+</persistence>
